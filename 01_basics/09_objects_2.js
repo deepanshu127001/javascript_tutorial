@@ -49,7 +49,7 @@ console.log(users[2].emailId);
 console.log(Object.keys(tinderUser));//will return an array of keys
 console.log(Object.values(tinderUser));//will return an array of values
 console.log(Object.entries(tinderUser));//each key value will be an array
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true check if object has its value it should not throw error
 
 const course={
     coursename:"cybersec",
@@ -57,7 +57,9 @@ const course={
     instructor:"meh"
 }
 //object destructuring 
-const {instructor}=course
+const {instructor/**values we want to extract from the object */}=course
 // renaming the keys
-const {instructor:teacher }=course
+const {instructor:teacher /**renaming the keys */}=course
 console.log(teacher);
+
+
